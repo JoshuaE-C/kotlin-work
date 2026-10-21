@@ -8,6 +8,16 @@ import kotlin.system.exitProcess
 //A=sqrt(s*(s-a)*(s-b)*(s-c))
 
 
-fun main() {
-    println("Hello World")
+fun main(args: Array<String>) {
+    if (args.size() != 3) {
+        println("Error: values for a, b, c required on command line")
+        exitProcess(1)
+    }
+    val a = args[0].toFloat()
+    val b = args[1].toFloat()
+    val c = args[2].toFloat()
+    var s = 0.5*(a+b+c)
+    var area = sqrt(s*(s-a)*(s-b)*(s-c))
+
+    println("Area = %.5f".format(area))
 }
