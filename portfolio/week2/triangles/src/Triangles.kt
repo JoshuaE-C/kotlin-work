@@ -3,7 +3,7 @@
 
 import kotlin.math.sqrt
 
-typealias Triangle = Triple<Double,Double,Double> (3,4,5)
+typealias Triangle = Triple<Double,Double,Double>
 
 // Add isValidTriangle() and triangleArea() functions here
 fun isValidTriangle(triangle: Triangle): Boolean {
